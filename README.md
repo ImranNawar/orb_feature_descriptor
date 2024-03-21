@@ -57,5 +57,16 @@ Here, 𝐼(𝑞) represents the intensity of a neighboring pixel 𝑞. If this c
 - Techniques like Sobel or Scharr operators help compute gradient orientations and magnitudes.
 - The keypoint's descriptor is computed based on the determined dominant orientation, ensuring robustness to rotation.
 
-<hr />
+<hr>
 In summary, ORB efficiently detects keypoints using the FAST algorithm, generates binary descriptors using the BRIEF algorithm, and computes the orientation of keypoints to make descriptors rotation invariant. These properties make ORB a fast and robust algorithm for tasks such as object recognition, image matching, and visual SLAM (Simultaneous Localization and Mapping) in computer vision applications.
+
+---
+***
+<br />
+
+## Code
+
+This repository contains a Jupyter Notebook ([code.ipynb](./code.ipynb)) that implements the ORB feature descriptor on two images: a query image and a training image. It matches the keypoints detected in these images.
+
+Additionally, it includes a folder named [Image_Retrieving_from_dataset](./Image_Retrieving_from_dataset), which contains another Jupyter Notebook. This notebook demonstrates the process of loading a dataset and extracting ORB feature vectors from all the images. It then allows the user to input a query image, extract its ORB feature descriptor, and match it with the feature descriptors of images of the dataset. The notebook utilizes the Hamming distance similarity metric to calculate distances, sorts the results, and plots the top images with the lowest distances.
+
