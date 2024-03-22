@@ -70,3 +70,10 @@ This repository contains a Jupyter Notebook ([code.ipynb](./code.ipynb)) that im
 
 Additionally, it includes a folder named [Image_Retrieving_from_dataset](./Image_Retrieving_from_dataset), which contains another Jupyter Notebook. This notebook demonstrates the process of loading a dataset and extracting ORB feature vectors from all the images. It then allows the user to input a query image, extract its ORB feature descriptor, and match it with the feature descriptors of images of the dataset. The notebook utilizes the Hamming distance similarity metric to calculate distances, sorts the results, and plots the top images with the lowest distances.
 
+### Requirements
+- Python 3.11.5
+
+### Installed Packages
+- opencv-python: 4.8.1.78
+- numpy: 1.24.3
+- matplotlib: 3.7.2
